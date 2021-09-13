@@ -42,7 +42,7 @@ var valor2=0;
 var valor3=0;
 var salir=0;
 while(valor2===0 && edad!==null){
-    
+  
     if (valor === true) {
         
         console.log("Debe ingresar numero");
