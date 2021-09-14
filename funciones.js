@@ -41,6 +41,8 @@ var valor = isNaN(edad);
 var valor2=0;
 var valor3=0;
 var salir=0;
+
+
 while(valor2===0 && edad!==null){
   
     if (valor === true) {
@@ -74,21 +76,52 @@ while(valor2===0 && edad!==null){
 let x=0;
 while(x===0){
 	let compra = parseInt(prompt(" Si Desea realizar compra presione 1: "));
-	if(compra===1){
-		let compra = parseInt(prompt(" Ingrese Monto a Gastar: "));
-     	calcularIva(compra);
-	}else{
+	if(compra!==1){
 		x=1;
 	}
 
+	if(compra===1){
+		let compra2 = parseInt(prompt(" Ingrese Monto a Gastar: "));
+     	calcularIva(compra2);
+
+	}
+	
+		
+		
+	
+		
+		
+	}
+
+
+
+
+
+
+	calcularMult();
+
+function calcularMult(){
+	let mult = parseInt(prompt(" Si Desea saber si un numero es multiplo ingrese 1: "));
+	if(mult===1){
+		let num1=parseInt(prompt("ingrese numero a dividir : "));
+		let num2=parseInt(prompt("ingrese numero2 a dividir : "));
+		var resto = num1 % num2;   
+			if ( resto == 0 ){
+			  alert("multiplo");
+			}
+	}
+	
 }
-function calcularIva(compra){
+function calcularIva(compra2){
 	let iva=0;
- if(compra >=10000){
-	iva=(compra*10.5)/100
+ if(compra2 >=10000){
+	iva=(compra2*10.5)/100
 	alert(("El pago de Iva sera : " +iva));
  }
+
 }
+
+
 
 
 
