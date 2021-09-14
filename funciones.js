@@ -30,8 +30,8 @@ while (condicion === 1) {
 	}
 	valor = isNaN(edad2);
 }  */
-saludo();
 
+saludo();
 function saludo(){
          console.log("Bienvenidos");
          alert(("Bienvenidos"));
@@ -62,8 +62,7 @@ while(valor2===0 && edad!==null){
 	    let salir = parseInt(prompt(" Si Desea seguir presione 2: "));
 	    if (salir!==  2) {
          valor2=1;
-	 	 console.log("Gracias por su Visita");
-		 alert(("Gracias por su Visita"));
+	 	 
          valor=1;
         }else{
             let edad = parseInt(prompt(" Ingrese Edad : "));
@@ -85,18 +84,8 @@ while(x===0){
      	calcularIva(compra2);
 
 	}
-	
-		
-		
-	
-		
-		
+			
 	}
-
-
-
-
-
 
 	calcularMult();
 
@@ -108,20 +97,26 @@ function calcularMult(){
 		var resto = num1 % num2;   
 			if ( resto == 0 ){
 			  alert("multiplo");
+			}else{
+				alert("No es multiplo");
 			}
 	}
 	
 }
+
 function calcularIva(compra2){
 	let iva=0;
  if(compra2 >=10000){
 	iva=(compra2*10.5)/100
 	alert(("El pago de Iva sera : " +iva));
+ }else{
+	alert(("El pago de Iva sera : " +iva));
  }
 
 }
 
-
+		console.log("Gracias por su Visita");
+		 alert(("Gracias por su Visita"));
 
 
 
